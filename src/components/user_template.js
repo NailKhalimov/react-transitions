@@ -19,7 +19,12 @@ UserTemplate.propTypes = {
   hob: PropTypes.arrayOf(PropTypes.number),
   spanish: PropTypes.bool,
   message: PropTypes.func,
-  car: PropTypes.object
+  car: PropTypes.object,
+  mother: function (props, propName, componentName) {
+    if(props[propName] !== 'Jane') {
+      return new Error(`The name ${props[propName]} is incorrect. shoulkd be Jane`)
+    }
+  }
 }
  
 export default UserTemplate;

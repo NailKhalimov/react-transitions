@@ -10,7 +10,8 @@ class User extends Component {
     hob: [1, 2, 3],
     spanish: false,
     message(){console.log('message')},
-    car:{brand: 'ford'}
+    car:{brand: 'ford'},
+    mother: "Matha"
   }
 
   render() {
